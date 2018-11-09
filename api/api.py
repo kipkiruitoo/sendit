@@ -14,7 +14,7 @@ db = SQLAlchemy(app)
 
 @app.route("/")
 def hello():
-    return jsonify({"about": "Hello World!"})
+    return jsonify({"about": "Welcome to sendit api"})
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
